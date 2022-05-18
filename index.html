@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Решение квадратных уравнений</title>
+  <link href="assets/css/index-styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="container">
+    <div class="equation-container">
+      <p>Введите уравнение</p>
+      <span>
+        <div class="coefficient-block">
+          <div>a</div>
+          <input type="text" id="a-coefficient" value="1" pattern="[+-]?\d*">
+        </div>
+        <span>x<sup>2</sup> +</span>
+      </span>
+      <span>
+        <div class="coefficient-block">
+          <div>b</div>
+          <input type="text" id="b-coefficient" value="1" pattern="[+-]?\d*">
+        </div>
+        <span>x +</span>
+      </span>
+      <span>
+        <div class="coefficient-block">
+          <div>c</div>
+          <input type="text" id="c-coefficient" value="-2" pattern="[+-]?\d*">
+        </div>
+        <span>= 0</span>
+      </span>
+      <div id="final-equation">
+        x<sup>2</sup> + x - 2 = 0
+      </div>
+      <span>
+        <input type="button" id="solve_btn" value="Найти корни">
+      </span>
+      <div id="solution">
+      </div>
+    </div>
+
+    <div class="results">
+      <table>
+        <caption>История</caption>
+        <thead>
+          <tr>
+            <td rowspan="2">Уравнение</td>
+            <td colspan="2">Корни</td>
+          </tr>
+          <tr>
+            <td>x1</td>
+            <td>x2</td>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="assets/scripts/index-script.js"></script>
+</body>
+</html>
